@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-img">
+            <img src="img/undraw.png" alt="imagem">
+
+        </div>
+        <div class="form">
+            <form action="#" method="post">
+                <div class="form-cabeçalho">
+                    <div class="titulo">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="entrar">
+                        <button><a href="index.html" target="_self">Voltar</a></button>
+                        
+                    </div>
+                </div>
+                <div class="input-grupo">
+                    <div class="input-box">
+                            <label for="1nome">Primeiro nome</label>
+                            <input type="text" name="nome" id="1nome" placeholder="Digite seu primeiro nome" required autofocus>
+                    </div>
+
+                    <div class="input-box">
+                            <label for="1sobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" id="1sobrenome" placeholder="Digite seu sobrenome" required>
+                    </div>
+
+                    <div class="input-box">
+                            <label for="1email">E-mail</label>
+                            <input type="email" name="email" id="1email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="input-box">
+                            <label for="1telefone">Telefone</label>
+                            <input type="tel" name="telefone" id="1telefone" placeholder="9xx xxx xxx" required>
+                    </div>
+
+                    <div class="input-box">
+                            <label for="1senha">Senha</label>
+                            <input type="password" name="senha" id="1senha" placeholder="Digite sua senha" required minlength="7" maxlength="14">
+                    </div>
+                    
+                    <div class="input-box">
+                            <label for="1conf-senha">Confirmar senha</label>
+                            <input type="password" name="conf-senha" id="1conf-senha" placeholder="Confirme sua senha" required minlength="7" maxlength="14">
+                    </div>
+                </div>
+
+                <div class="grupo-genero">
+                        <div class="titulo-genero">
+                            <h6>Gênero:</h6>
+                        </div>
+
+                        <div class="genero-input">
+                            <input type="radio" name="genero" id="1masculino">
+                            <label for="1masculino">Masculino</label>
+                        </div>
+
+                        <div class="genero-input">
+                            <input type="radio" name="genero" id="1feminino">
+                            <label for="1feminino">Feminino</label>
+                        </div>
+
+                        <div class="genero-input">
+                            <input type="radio" name="genero" id="1outros">
+                            <label for="1outros">Outros</label>
+                        </div>
+
+                        <div class="genero-input">
+                            <input type="radio" name="genero" id="1none">
+                            <label for="1none">Prefiro não dizer</label>
+                        </div>
+                </div>
+                <div class="continuar">
+                    <button><a href="#">Continuar</a></button>
+                </div>
+            </form>
+        </div>
+        <div class="rodape">
+            <footer>
+                <p>| Site Criado Por <a href="#">Joel Nogueira</a></p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

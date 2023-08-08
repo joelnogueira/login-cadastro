@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?família=Inter:wght@100;200;300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
+:root{
+    --cor1: #267365; 
+    --cor2: #f9d126; 
+    --cor3: #F29F05; 
+    --cor4: #F28705; 
+    --cor5: #F23030; 
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+.area-login{
+    background-color: var(--cor1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area-login{
+    background-image: url(../img/background\ login.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.login{
+    background-color: var(--cor4);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.397);
+    width: 350px;
+    height: 370px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login h1{
+    font-family: 'rouge script', cursive;
+    color: #2b441a ;
+    font-size: 2em;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.568);
+}
+.login input{
+    margin-top: 15px;
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.267);
+}
+.login input:hover{
+    background-color: rgba(201, 186, 186, 0.568);
+}
+.login input::placeholder{
+    padding: 5px;
+}
+.login input:focus-visible{
+    outline: 2px solid yellow;
+}
+#entrar button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    color: white;
+    background-color: var(--cor2);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.267);
+    border: none;
+    border-radius: 5px;
+    margin: 25px 0px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+#entrar button:hover{
+    background-color: var(--cor4);
+    font-weight: bolder;
+    box-shadow: 1px 1px 5px #00001c59;
+}
+.login p{
+    margin-top: 30px;
+    font-size: .8em;
+}
+.login a{
+    font-weight: bolder;
+    text-decoration: none;
+}
+.login a:hover{
+    color: #0000ff60;
+}
+.rodape {
+    position: absolute;
+    top: 38.5rem;
+    left: 20px;
+    font-size: .9em;
+    color: white;
+}
+.rodape a {
+    color: rgb(111, 111, 255);
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.rodape a::after{
+    content: "\1F517";
+}
+.rodape a:hover{
+    color: rgba(111, 111, 255, 0.527);
+}

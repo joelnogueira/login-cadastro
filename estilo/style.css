@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?família=Inter:wght@100;200;300;400&display=swap');
+
+:root{
+    --cor1: #267365; 
+    --cor2: #f9d126; 
+    --cor3: #F29F05; 
+    --cor4: #F28705; 
+    --cor5: #F23030; 
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #267365;
+    background-image:url(../img/background\ cadastro.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.397);
+}
+.form-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor4);
+    padding: 1rem;
+}
+.form-img img{
+    width: 30rem;
+}
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor3);
+    padding: 3rem;
+}
+.form-cabeçalho{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.entrar{
+    display: flex;
+    align-items: center;
+}
+
+.entrar button{
+    padding: 6px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--cor2);
+}
+.entrar button a{
+    text-decoration: none;
+    color: white;
+    
+}
+.entrar button:hover{
+    background-color: var(--cor4);
+    font-weight: bolder;
+    box-shadow: 1px 1px 5px #00001c59;
+    
+}
+.titulo h1::after{
+    content: " ";
+    background-color: var(--cor2);
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.input-grupo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    padding: 1rem 0;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.input-box input{
+    margin: 10px 0px;
+    padding: 5px 2px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.267);
+}
+.input-box input:hover{
+    background-color: rgba(201, 186, 186, 0.568);
+}
+.input-box input:focus-visible{
+    outline: 2px solid var(--cor2);
+}
+.input-box input::placeholder{
+    padding-left: 3px;
+
+}
+
+.input-box label,
+.titulo-genero h6{
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #000000c0;
+}
+.grupo-genero{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.62rem;
+    padding: .5rem; 
+    justify-content: space-between;
+    
+}
+.genero-input{
+    display: flex;
+    align-items: center;
+}
+.genero-input input{
+    margin-right: 3px;
+}
+.genero-input label{
+    font-size: 0.7em;
+    font-weight: bolder;
+    color: rgb(36, 33, 33);
+}
+.continuar button{
+    width: 100%;
+    background-color: var(--cor2);
+    border: none;
+    border-radius: 5px;
+    margin: 15px 0px;
+    padding: 8px 15px;
+}
+.continuar button a{
+    color: white;
+    text-decoration: none;
+    cursor:pointer ;
+}
+.continuar button:hover{
+    background-color: var(--cor4);
+    font-weight: bolder;
+    box-shadow: 1px 1px 5px #00001c59;
+}
+.rodape {
+    position: absolute;
+    top: 38.5rem;
+    left: 20px;
+    font-size: .9em;
+    color: white;
+}
+.rodape a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(111, 111, 255);
+    border-radius: 10px;
+}
+.rodape a::after{
+    content: "\1F517";
+}
+.rodape a:hover{
+    color: rgba(111, 111, 255, 0.527);
+}
+@media screen and (max-width: 1150px) {
+    .form-img{
+        display: none;
+    }
+    .container{
+        width: 50%;
+    }
+    .form{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 950px) {
+    .container{
+        width: 60%;
+        height: auto;
+    }
+    .input-grupo{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+        
+    }
+    .genero-input{
+        margin-top: 6px;
+    }
+    
+    .grupo-genero{
+        flex-direction: column;
+    }  
+}
+
